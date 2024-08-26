@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -24,6 +24,9 @@ export function HelloWave() {
   return (
     <Animated.View style={animatedStyle}>
       <ThemedText style={styles.text}>👋</ThemedText>
+      <Text className="flex-1 items-center justify-center bg-blue-500 text-pink-800 ">
+      <Text>Open up App.js to start working on your app!</Text>
+    </Text>
     </Animated.View>
   );
 }
